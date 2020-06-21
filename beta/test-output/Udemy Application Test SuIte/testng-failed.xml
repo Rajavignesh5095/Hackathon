@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Udemy Application Test SuIte]">
+  <listeners>
+    <listener class-name="com.udemy.ExtentreportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Udemy Application TestCases(failed)">
+    <classes>
+      <class name="com.udemy.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginInvalidEmailValidPasswordTest"/>
+          <include name="udemylogotest"/>
+          <include name="tearDown"/>
+          <include name="loginValidEmailInvalidPasswordTest"/>
+        </methods>
+      </class> <!-- com.udemy.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Udemy Application TestCases(failed) -->
+</suite> <!-- Failed suite [Udemy Application Test SuIte] -->
